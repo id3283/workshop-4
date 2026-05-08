@@ -2,7 +2,15 @@ public class UserInterface {
     private Dealership dealership;
 
     public UserInterface() {
-        this.dealership = DealershipFileManager.getDealership();
 
+    }
+
+    private void init() {
+        this.dealership = DealershipFileManager.getDealership();
+    }
+
+    public void display() {
+        init();
+        // display the top-level menu
     }
 }
